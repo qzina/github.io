@@ -9,21 +9,28 @@
     <title>Home</title>
     <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin="crossorigin" />
     <link rel="preload" href="fonts/OpenSans_SemiCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin" />
-    <link rel="stylesheet" href="css/main.min.css?_v=20230906173551">
-    <script defer src="js/main.min.js?_v=20230906173551"> </script>
+    <link rel="stylesheet" href="css/main.min.css?_v=20230929065637">
+    <script defer src="js/main.min.js?_v=20230929065637"> </script>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="container page-header__container"><a class="page-header__logo logo" href="#"><img src="img/logo.png" alt="Логотип Seed Way"></a>
+      <div class="container page-header__container"><a class="page-header__logo logo" href="index.html"><img src="img/logo.png" alt="Логотип Seed Way"></a>
         <nav class="page-header__nav page-nav">
           <ul class="page-nav__list list-reset">
-            <li class="page-nav__item page-nav__item--current"><a class="page-nav__link" href="#">About</a></li>
-            <li class="page-nav__item"><a class="page-nav__link" href="#">Compliance</a></li>
-            <li class="page-nav__item"><a class="page-nav__link" href="#">Sustainability</a></li>
-            <li class="page-nav__item"><a class="page-nav__link" href="#">News</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="team.html">The team</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="#">SeedWay</a>
+              <ul class="page-nav__list list-reset page-nav__sub-menu">
+                <li class="page-nav__item"><a class="page-nav__link" href="genetics.html">Genetics</a></li>
+                <li class="page-nav__item"><a class="page-nav__link" href="technology.html">Technology</a></li>
+                <li class="page-nav__item"><a class="page-nav__link" href="business.html">Business</a></li>
+              </ul>
+            </li>
+            <li class="page-nav__item"><a class="page-nav__link" href="compliance.html">Compliance</a></li>
+            <li class="page-nav__item"><a class="page-nav__link" href="sustainability.html">Sustainability</a></li>
           </ul>
           <div class="button"></div>
         </nav>
+        <button class="menu-toggle btn-reset"><span> </span><span> </span><span> </span></button>
       </div>
     </header>
     <main>
@@ -33,47 +40,18 @@
             <h1 class="hero__title page-title">Follow the Seed Way</h1>
             <div class="hero__descr">
               <p>R&D (scientific) platform that allows you to create the most advanced sunflower hybrids, both based on your own selection and using genetic material from around the world.</p>
-            </div><a class="hero__btn btn btn-reset" href="#">Learn more</a>
+            </div><a class="hero__btn btn btn-reset" href="team.html">Learn more</a>
           </div>
           <div class="hero__collage img-collage">
             <picture>
-              <source srcset="img/hero/hero_bg_main.webp" type="image/webp"><img loading="lazy" src="img/hero/hero_bg_main.jpg" alt="Фотография поля с подсолнухами">
+              <source srcset="img/hero/hero_bg_1.webp" type="image/webp"><img loading="lazy" src="img/hero/hero_bg_1.jpg" alt="Фотография поля с подсолнухами">
             </picture>
             <picture>
-              <source srcset="img/hero/hero_bg_small.webp" type="image/webp"><img loading="lazy" src="img/hero/hero_bg_small.jpg" alt="Фотография подсолнуха">
+              <source srcset="img/hero/hero_bg_2.webp" type="image/webp"><img loading="lazy" src="img/hero/hero_bg_2.jpg" alt="Фотография подсолнуха">
             </picture>
             <picture>
-              <source srcset="img/hero/hero_bg_middle.webp" type="image/webp"><img loading="lazy" src="img/hero/hero_bg_middle.jpg" alt="Фотография поля с техникой">
+              <source srcset="img/hero/hero_bg_3.webp" type="image/webp"><img loading="lazy" src="img/hero/hero_bg_3.jpg" alt="Фотография поля с техникой">
             </picture>
-          </div>
-        </div>
-      </section>
-      <section class="about">
-        <div class="container about__container grid">
-          <div class="about__story">
-            <h2 class="section-title about__title">Our story </h2>
-            <div class="about__story-text">
-              <p>Our company was founded by a group of private investors from France. These are people with solid experience both in the seed business and in the development of start-ups in other areas.</p>
-            </div>
-          </div>
-          <div class="about__wrapper grid">
-            <picture>
-              <source srcset="img/about/about_img.webp" type="image/webp"><img loading="lazy" src="img/about/about_img.jpg" alt="Фотография трактора на поле">
-            </picture>
-            <div class="about__descr">
-              <div class="about__text-block text-block">
-                <h3 class="text-block__title">Our mission</h3>
-                <div class="text-block__text">
-                  <p>We research, develop, and market products with intellectual property in plant genetics from extensive crops. We seek to be at the forefront, adding technologies and talents, promoting innovation, associativity, and the development of new businesses that impact our core and the value chain.</p>
-                </div>
-              </div>
-              <div class="about__text-block text-block">
-                <h3 class="text-block__title">Our vision</h3>
-                <div class="text-block__text">
-                  <p>To be a leading company in plant genetics for extensive crops, present in all the relevant markets worldwide, and sustainably contribute to productivity.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -81,23 +59,54 @@
         <div class="container features__container">
           <ul class="features__list list-reset">
             <li class="features__item">
+              <div class="features__item-img"><img src="img/flower.svg" alt="sunflower"></div>
               <h3 class="features__item-title">MARKET</h3>
-              <div class="features__item-text">Accounts for more than 40% of global soy germplasm.</div>
+              <div class="features__item-text">Comprises global sunflower market germplasm, adapted to local needs.</div>
             </li>
             <li class="features__item">
+              <div class="features__item-img"><img src="img/focus.svg" alt="focus"></div>
               <h3 class="features__item-title">FOCUS</h3>
-              <div class="features__item-text">Genetics drive us.</div>
+              <div class="features__item-text">Genetics propel us. Traits are our focus.</div>
             </li>
             <li class="features__item">
+              <div class="features__item-img"><img src="img/differential.svg" alt="differential"></div>
               <h3 class="features__item-title">DIFFERENTIAL</h3>
-              <div class="features__item-text">New technologies and improvement programs.</div>
+              <div class="features__item-text">Incorporating novel technologies and enhancement initiatives.</div>
             </li>
           </ul>
         </div>
       </section>
+      <section class="story">
+        <div class="container story__container grid">
+          <div class="story__img"> <img src="img/story-img.png" alt="Tractor"></div>
+          <div class="story__text">
+            <h2 class="story__title">Our story</h2>
+            <p class="story__descr">Our company was founded by a group of private investors from France. These are people with solid experience both in the seed business and in the development of start-ups in other areas.</p>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container about__container grid">
+          <div class="about__descr">
+            <div class="about__text-block text-block">
+              <h3 class="text-block__title">Our goal</h3>
+              <div class="text-block__text">
+                <p>We engage in researching and developing of products featuring proprietary intellectual property in the realm of plant genetics, focusing on extensive crops. Our goal is to consistently remain at the forefront by integrating advanced technologies and expertise, fostering innovation, collaboration, and the establishment of novel ventures that influence both our core operations and the entire value chain.</p>
+              </div>
+            </div>
+            <div class="about__text-block text-block">
+              <h3 class="text-block__title">Our idea</h3>
+              <div class="text-block__text">
+                <p>Our aim is to become a foremost venture in the field of plant genetics for a variety of crops, operating across all significant global markets, and making a lasting and sustainable impact on productivity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__img"> <img src="img/about-img.png" alt="about"></div>
+        </div>
+      </section>
       <section class="info">
         <div class="container info__container grid">
-          <h2 class="section-title info__title"> We are breeding for a better tomorrow</h2>
+          <h2 class="section-title info__title"> We are driving the change in agriculture</h2>
           <div class="info__wrapper info-grid">
             <article class="info__item info-card">
               <picture>
@@ -105,8 +114,8 @@
               </picture>
               <div class="info-card__text">
                 <h3 class="info-card__title">CULTURE</h3>
-                <div class="info-card__descr">TRANSPARENCY, AGILITY AND FLEXIBILITY in business management</div>
-              </div><a class="info-card__link" href="#"> <img src="img/arrow-sm-right-svgrepo-com.svg" alt="Read more"></a>
+                <div class="info-card__descr">Our culture is characterized by audacity, agility, and flexibility in our business management approach.</div>
+              </div><a class="info-card__link" href="team.html"> <img src="img/arrow-sm-right-svgrepo-com.svg" alt="Read more"></a>
             </article>
             <article class="info__item info__item--large info-card info-card--large">
               <picture>
@@ -114,8 +123,8 @@
               </picture>
               <div class="info-card__text">
                 <h3 class="info-card__title">GENETICS</h3>
-                <div class="info-card__descr">40% OF THE WORLDWIDE SOYBEAN PRODUCTION IS MADE WITH GDM GENETICS</div>
-              </div><a class="info-card__link" href="#"> <img src="img/arrow-sm-right-svgrepo-com.svg" alt="Read more"></a>
+                <div class="info-card__descr">Up to date genetics are the driving force. Serving the needs of modern farming is our ultimate goal.</div>
+              </div><a class="info-card__link" href="genetics.html"> <img src="img/arrow-sm-right-svgrepo-com.svg" alt="Read more"></a>
             </article>
             <article class="info__item info-card">
               <picture>
@@ -123,8 +132,8 @@
               </picture>
               <div class="info-card__text">
                 <h3 class="info-card__title">TECHNOLOGY</h3>
-                <div class="info-card__descr">We implement STATE OF THE ART TECHNOLOGIES for genetic improvement</div>
-              </div><a class="info-card__link" href="#"> <img src="img/arrow-sm-right-svgrepo-com.svg" alt="Read more"></a>
+                <div class="info-card__descr">We embrace cutting-edge TECHNOLOGIES to achieve genetic improvement.</div>
+              </div><a class="info-card__link" href="technology.html"> <img src="img/arrow-sm-right-svgrepo-com.svg" alt="Read more"></a>
             </article>
           </div>
         </div>
@@ -137,10 +146,7 @@
           <div class="copy page-footer__copy">Copyright©️ of SeedWay. All rights reserved.</div>
         </div>
         <div class="page-footer__column">
-          <div class="page-footer__contacts">
-            <div class="page-footer__address">Moscow, 2nd Smolensky lane, 1/4, office 6 </div>
-            <div class="page-footer__mail">office@seedway.eu</div>
-          </div>
+          <div class="page-footer__mail">office@seedway.eu</div>
         </div>
       </div>
     </footer>
